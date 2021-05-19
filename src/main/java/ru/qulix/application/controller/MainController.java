@@ -1,5 +1,7 @@
 package ru.qulix.application.controller;
 
+import ru.qulix.application.model.entity.Project;
+
 public class MainController {
 
     /**
