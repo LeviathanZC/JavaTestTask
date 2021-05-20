@@ -1,6 +1,7 @@
 package ru.qulix.application.model.dao;
 
 import ru.qulix.application.model.entity.Project;
+import ru.qulix.application.model.exception.DaoException;
 
 import java.util.List;
 import java.util.Map;
