@@ -12,7 +12,15 @@ import java.io.IOException;
 
 public class RequestController extends HttpServlet {
 
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        processing(request, response);
+    }
 
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        processing(request, response);
+    }
 
     private void processing(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ActionCommand command = ActionProvider.defineAction(request.getParameter(RequestParam.COMMAND));
