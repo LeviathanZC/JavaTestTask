@@ -15,7 +15,7 @@ public class ActionProvider {
         ActionCommand command = (request, response) -> new Router(JspPath.ERROR_404);
         try {
             if (action !=null) {
-                //command parsing
+                command = CommandType.valueOf(action.toUpperCase()).getCurrent();
             }
         } catch (IllegalArgumentException ex) {
             log.error(ex);
