@@ -2,13 +2,14 @@ package ru.qulix.application.model.entity;
 
 import java.util.Objects;
 
-public class Project extends Identifiable{
+public class Project extends Identifiable {
 
     private String name;
     private String shortName;
     private String description;
 
-    public Project() {}
+    public Project() {
+    }
 
     public Project(String name, String shortName, String description) {
         this.name = name;
@@ -61,7 +62,7 @@ public class Project extends Identifiable{
     public int hashCode() {
         final int prime = 113;
         int result = super.hashCode();
-        result = prime * result + (getName()!= null ? getName().hashCode() : 0);
+        result = prime * result + (getName() != null ? getName().hashCode() : 0);
         result = prime * result + (getShortName() != null ? getShortName().hashCode() : 0);
         result = prime * result + (getDescription() != null ? getDescription().hashCode() : 0);
         return result;
