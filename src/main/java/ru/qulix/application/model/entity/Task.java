@@ -13,6 +13,12 @@ public class Task extends Identifiable {
 
     public Task() {}
 
+    public Task(String name, int duration, Status status) {
+        this.name = name;
+        this.duration = duration;
+        this.status = status;
+    }
+
     public Task(String name, int duration, LocalDate start, LocalDate end, Status status) {
         this.name = name;
         this.duration = duration;
