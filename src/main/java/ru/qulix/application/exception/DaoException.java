@@ -1,4 +1,4 @@
-package ru.qulix.application.model.exception;
+package ru.qulix.application.exception;
 
 public class DaoException extends RuntimeException {
 
